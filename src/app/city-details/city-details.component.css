@@ -1,0 +1,9 @@
+.box{
+    border: 1px solid #fff;
+    margin: 8px;
+}
+.box:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}

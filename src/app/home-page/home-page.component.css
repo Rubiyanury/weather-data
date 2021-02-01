@@ -1,0 +1,33 @@
+
+ul, li{
+    list-style: none;
+    display: inline-block;
+}
+ul{
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #fff;
+    position: relative;
+    float: left;
+    font-size: 25px;
+}
+li p {
+    font-size: 15px;
+}
+li span {
+    position: absolute;
+    right: auto;
+    left: 40%;
+    display: block;
+    top: 39%;
+}
+li:hover {
+    background-color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}

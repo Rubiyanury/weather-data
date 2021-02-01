@@ -1,0 +1,13 @@
+<div class="container-fluid">
+    <div class="bg">
+        <div class="layer">
+            <h3>5 days 3 hour weather forecast of - {{city}}</h3>
+            <div class="row">
+                    <div class="col-md-3 col-sm-3 box" *ngFor="let item of details"> 
+                        <p>Temparature: {{item?.main?.temp}}</p>
+                        <p>Sea Level: {{item?.dt}}</p>
+                    </div>
+            </div>
+        </div>
+        </div>
+</div>

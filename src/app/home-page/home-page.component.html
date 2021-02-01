@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="bg">
+        <div class="layer">
+            <h2>Wheather Details</h2>
+            <div class="row">
+                <div class="col-md-12 cl-sm-12 col-xs-12">
+                    <ul>
+                        <li *ngFor="let item of cities" routerLink="/details" class="col-md-4 col-sm-4">
+                            <div (click)="inputData(item)">
+                                <h4>{{item}}</h4>
+                                <p>Temperature : {{cityDetails[item]?.main?.temp}}</p>
+                                <p>Sunrise Time : {{cityDetails[item]?.sys?.sunrise}}</p>
+                                <p>Sunset Time : {{cityDetails[item]?.sys?.sunset}}</p>
+                            </div>
+                            
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
